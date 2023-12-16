@@ -1,0 +1,270 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Agrandir';
+    src: url('/Agrandir/Agrandir-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Vollkorn';
+    src: url("https://fonts.googleapis.com/css?family=Vollkorn");
+}
+
+body {
+    font-family: 'Agrandir';
+    background-color: #fff;
+}
+
+header {
+    background-color: #fff;
+    color: black;
+    width: 100vw;
+    padding: 5px 0;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-bottom: 0.1rem solid rgba(18, 18, 18, 0.08);
+}
+
+.nav-main {
+    display: inline-flex;
+    align-items: center
+}
+
+nav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-flex;
+    vertical-align: middle;
+    margin-right: 20px;
+    font-size: 1vw;
+}
+
+nav a {
+    display: inline-flex;
+    text-decoration: none;
+    color: #333;
+    align-items: center;
+}
+
+
+nav ul li a:after,
+nav u li a:before { 
+    transition: .3s cubic-bezier(0, 0.5, 0, 1);
+}
+
+nav ul li a{
+    position: relative;
+}
+
+nav ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '';
+    color: transparent;
+    background: #aaa;
+    height: 2px;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+.logo img {
+    max-width: 250px;
+    padding-right: 10px;
+}
+
+.cta a {
+    color: #333;
+    background-color: #FFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.hero {
+    background-repeat: no-repeat;
+    color: #fff;
+    display: inline-flex;
+    position: relative;
+    align-self: center;
+    min-height: 650px;
+}
+
+.heroimg{
+    width: 60vw;
+    background-image: url(img/hero-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.herovid {
+    width: 60vw;
+}
+
+.herodesc {
+    background-color: #F0F0EA;
+    color: #2A3B55;
+    width: 40vw;
+    padding: 40px;
+}
+
+.herodesc h1 {
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    position: relative;
+    margin: 0;
+}
+
+.herodesc p, .herodesc ul {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    margin: 0;
+}
+
+.centered-text {
+    height: 10vh;
+    text-align: center;
+    background-color: pink;
+}
+
+.centered-text h1 {
+    text-align: center;
+}
+
+.hero a {
+    background-color: #333;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 200ms ease-in-out;
+    position: relative;
+    margin: 0;
+}
+
+.hero a:hover {
+    background-color: #073e05;
+}
+
+.featured-h2 {
+    font-family: 'Vollkorn';
+    padding: 30px 0 0 10px;
+    text-align: center;
+}
+
+.featured-recipes {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe-card {
+    display: inline-block;
+    padding: 25px;
+    margin: 15px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+
+}
+
+.card-info {
+    font-size: 1.1em;
+    padding: 5px;
+    margin: 5px;
+    height: 50px;
+    align-items: center;
+}
+
+.card-info h3 {
+    font-weight: 400;
+}
+
+.recipe-card img {
+    max-width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    transition: 300ms ease-in-out;
+    margin-bottom: 10px;
+}
+
+.recipe-card:hover img {
+    transform: scale(1.03);
+}
+
+
+.why-us {
+    text-align: center;
+    padding: 40px 0;
+    font-size: large;
+    font-weight: 500;
+    align-items:baseline;
+}
+
+.why-us h2 {
+    font-weight: 500;
+}
+
+.step {
+    display: inline-block;
+    margin: 20px;
+    max-width: 300px;
+    height: 300px;
+}
+
+.why-us img {
+    max-width: 150px;
+}
+
+.why-us h3 {
+    font-family: 'Agrandir';
+    padding-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #F0F0EA;
+    color: #333;
+    text-align: center;
+    padding: 30px 0;
+} 
+
+footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer a:hover {
+    color: grey;    
+}
