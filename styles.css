@@ -6,6 +6,16 @@
 }
 
 @font-face {
+    font-family: 'Vera Humana 95';
+    src: url('vera_humana_95/Verahb__.ttf');
+}
+
+@font-face {
+    font-family: 'Classico URW';
+    src: url('classicourw/classicourw-regular.woff')
+}
+
+@font-face {
     font-family: 'Agrandir';
     src: url('/Agrandir/Agrandir-Regular.otf') format("opentype");
 }
@@ -16,7 +26,7 @@
 }
 
 body {
-    font-family: 'Agrandir';
+    font-family: 'Agrandir', sans-serif;
     background-color: #fff;
 }
 
@@ -89,6 +99,10 @@ nav ul li a:hover:after {
     width: 100%;
 }
 
+nav a:visited {
+    color: midnightblue;
+}
+
 .logo img {
     max-width: 250px;
     padding-right: 10px;
@@ -106,6 +120,7 @@ nav ul li a:hover:after {
 .hero {
     background-repeat: no-repeat;
     color: #fff;
+    border-bottom: 0.1rem solid rgba(18, 18, 18, 0.08);
     display: inline-flex;
     position: relative;
     align-self: center;
@@ -121,6 +136,11 @@ nav ul li a:hover:after {
 
 .herovid {
     width: 60vw;
+}
+
+video {
+    border: none;
+    outline: none;
 }
 
 .herodesc {
@@ -142,7 +162,7 @@ nav ul li a:hover:after {
 .herodesc p, .herodesc ul {
     font-size: 20px;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     position: relative;
     margin: 0;
 }
@@ -160,18 +180,19 @@ nav ul li a:hover:after {
 .hero a {
     background-color: #333;
     color: #FFF;
-    padding: 10px 20px;
+    margin-top: 200px;
+    padding: 20px 20px;
     border-radius: 5px;
     font-size: 20px;
     text-decoration: none;
     font-weight: 500;
     transition: 200ms ease-in-out;
     position: relative;
-    margin: 0;
+    align-self: center;
 }
 
 .hero a:hover {
-    background-color: #073e05;
+    background-color: #161a46;
 }
 
 .featured-h2 {
@@ -193,6 +214,7 @@ nav ul li a:hover:after {
     padding: 25px;
     margin: 15px;
     width: 350px;
+    height: 450px;
     border-radius: 10px;
     background-color: #f5f5f5;
 
@@ -247,10 +269,42 @@ nav ul li a:hover:after {
 }
 
 .why-us h3 {
-    font-family: 'Agrandir';
+    font-family: 'Classico URW';
     padding-bottom: 20px;
     font-size: 1.5em;
     font-weight: bold;
+}
+
+/* How it works page */
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.steps-head {
+    width: 100vw;
+    text-align: center;
+    font-size: larger;
+    padding: 40px 0;
+    color: white;
+    background-color: #161a46;
+}
+
+.steps-container {
+    display: flex;
+    padding: 30px 0;
+    flex-direction: row;
+    text-align: center;
+}
+
+.steps-item {
+    padding: 30px 10px
+}
+
+.steps-item img {
+    max-width: 250px;
 }
 
 footer {
@@ -268,3 +322,105 @@ footer a {
 footer a:hover {
     color: grey;    
 }
+
+/*  */
+.wrapper{
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .wrapper .box{
+    background: #fff;
+    width: calc(33% - 10px);
+    padding: 25px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+  }
+  .wrapper .box i.quote{
+    font-size: 20px;
+    color: #161a46;
+  }
+  .wrapper .box .content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  .box .info .name{
+    font-family: 'Vera Humana 95';
+    font-weight: 500;
+    font-size: 17px;
+  }
+  .box .info .stars{
+    margin-top: 2px;
+  }
+  .box .info .stars i{
+    color: #161a46;
+  }
+  .box .content .image{
+    height: 75px;
+    width: 75px;
+    padding: 3px;
+    background: #161a46;
+    border-radius: 50%;
+  }
+  .content .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  .box:hover .content .image img{
+    border-color: #fff;
+  }
+
+  /* FAQ */
+.heroimg img{
+    max-height: 650px;
+    margin: 0;
+}
+
+.faq {
+    padding: 5% 10%;
+    font-size: 1.3rem;
+}
+
+.faq a {
+    color: #aaa;
+}
+
+.faq a:hover {
+    color: gray;
+}
+
+.question {
+    padding-bottom: 5%;
+}
+
+.question ul {
+    padding-left: 40px;
+}
+
+/* Contact Us Page */
+iframe {
+    width: 600px;
+    height: 450px;
+    border: 0;
+}
+
+.contact-us {
+    padding: 5% 10%;
+
+}
+
+.contact-us h1, .contact-us h2,  .contact-us h3, .contact-us p, .contact-us iframe {
+    padding-bottom: 45px;
+}
+
+
