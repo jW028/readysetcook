@@ -195,6 +195,76 @@ video {
     background-color: #161a46;
 }
 
+.our-plans {
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+    background-color: #F0F0EA;
+    text-align: center;
+}
+
+.our-plans h1 {
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    position: relative;
+    margin: 0;
+}
+
+.plan-container {
+    display: flex;
+}
+
+.plan {
+    width: 20%;
+    margin: 3%;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 2%;
+    font-size: 20px;
+}
+
+.plan-title {
+    width: 100%;
+    padding-bottom: 3%;
+    border-bottom: 0.1rem solid rgba(18, 18, 18, 0.08);
+}
+
+.plan-desc {
+    width: 100%;
+    height: 100%;
+    padding-top: 9%;
+
+}
+
+.icon {
+    width: 80%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.fas {
+    padding-top: 3%;
+}
+
+.row {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.row:last-of-type {
+    align-items: center;
+    background-color: #161a46;
+    color: white;
+    margin-top: 5%;
+    padding: 5% 10%;
+    border-radius: 0 0 10px 10px;
+}
+
+
 .featured-h2 {
     font-family: 'Vollkorn';
     padding: 30px 0 0 10px;
@@ -214,7 +284,6 @@ video {
     padding: 25px;
     margin: 15px;
     width: 350px;
-    height: 450px;
     border-radius: 10px;
     background-color: #f5f5f5;
 
@@ -422,5 +491,4 @@ iframe {
 .contact-us h1, .contact-us h2,  .contact-us h3, .contact-us p, .contact-us iframe {
     padding-bottom: 45px;
 }
-
 
