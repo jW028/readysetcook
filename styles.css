@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* Font imports */
 @font-face {
     font-family: 'Vera Humana 95';
     src: url('vera_humana_95/Verahb__.ttf');
@@ -25,11 +26,13 @@
     src: url("https://fonts.googleapis.com/css?family=Vollkorn");
 }
 
+/* Body styles */
 body {
     font-family: 'Agrandir', sans-serif;
     background-color: #fff;
 }
 
+/* Header styles */
 header {
     background-color: #fff;
     color: black;
@@ -42,6 +45,7 @@ header {
     border-bottom: 0.1rem solid rgba(18, 18, 18, 0.08);
 }
 
+/* Navbar styles */
 nav {
     display: inline-flex;
     align-items: center;
@@ -49,10 +53,12 @@ nav {
     width: 100vw;
 }
 
+/* Navbar list styles */
 nav ul {
     list-style: none;
 }
 
+/* Navbar list item styles */
 nav li {
     display: inline-flex;
     vertical-align: middle;
@@ -60,6 +66,7 @@ nav li {
     font-size: 1vw;
 }
 
+/* Navbar link styles */
 nav a {
     display: inline-flex;
     text-decoration: none;
@@ -67,7 +74,7 @@ nav a {
     align-items: center;
 }
 
-
+/* Styles for hover effects on links */
 nav ul li a:after,
 nav u li a:before { 
     transition: .3s cubic-bezier(0, 0.5, 0, 1);
@@ -94,24 +101,18 @@ nav ul li a:hover:after {
     width: 100%;
 }
 
+/* Styles for visited links */
 nav a:visited {
     color: midnightblue;
 }
 
+/* Logo image styles */
 .logo img {
     max-width: 250px;
     padding-right: 10px;
 }
 
-.cta a {
-    color: #333;
-    background-color: #FFF;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-right: 10px;
-    text-decoration: none;
-}
-
+/* Hero section styles */
 .hero {
     background-repeat: no-repeat;
     color: #fff;
@@ -119,9 +120,9 @@ nav a:visited {
     display: inline-flex;
     position: relative;
     align-self: center;
-    min-height: 650px;
 }
 
+/* Hero image styles */
 .heroimg{
     width: 60vw;
     background-image: url(img/hero-background.jpg);
@@ -129,15 +130,13 @@ nav a:visited {
     background-repeat: no-repeat;
 }
 
+/* Hero video styles */
 .herovid {
     width: 60vw;
+    height: 100%;
 }
 
-video {
-    border: none;
-    outline: none;
-}
-
+/* Hero description styles */
 .herodesc {
     background-color: #F0F0EA;
     color: #2A3B55;
@@ -145,6 +144,7 @@ video {
     padding: 40px;
 }
 
+/* Hero description heading styles */
 .herodesc h1 {
     font-size: 50px;
     padding-top: 50px;
@@ -154,6 +154,7 @@ video {
     margin: 0;
 }
 
+/* Hero description paragraph and ul styles */
 .herodesc p, .herodesc ul {
     font-size: 20px;
     padding-top: 30px;
@@ -162,16 +163,7 @@ video {
     margin: 0;
 }
 
-.centered-text {
-    height: 10vh;
-    text-align: center;
-    background-color: pink;
-}
-
-.centered-text h1 {
-    text-align: center;
-}
-
+/* Hero button styles */
 .hero a {
     background-color: #333;
     color: #FFF;
@@ -186,10 +178,12 @@ video {
     align-self: center;
 }
 
+/* Hero button hover styles */
 .hero a:hover {
     background-color: #161a46;
 }
 
+/* Styling for Our Plans section */
 .our-plans {
     width: 100%;
     height: 100%;
@@ -198,6 +192,7 @@ video {
     text-align: center;
 }
 
+/* Styling for Our Plans section heading */
 .our-plans h1 {
     font-size: 50px;
     padding-top: 50px;
@@ -207,10 +202,12 @@ video {
     margin: 0;
 }
 
+/* Display plans horizontally using flex */
 .plan-container {
     display: flex;
 }
 
+/* Styling for plan listings */
 .plan {
     width: 20%;
     margin: 3%;
@@ -221,12 +218,14 @@ video {
     height: fit-content;
 }
 
+/* Styling for plan title */
 .plan-title {
     width: 100%;
     padding-bottom: 3%;
     border-bottom: 0.1rem solid rgba(18, 18, 18, 0.08);
 }
 
+/* Plan description styles */
 .plan-desc {
     width: 100%;
     height: 100%;
@@ -234,16 +233,19 @@ video {
 
 }
 
+/* Icon container styles */
 .icon {
     width: 80%;
     display: inline-flex;
     justify-content: space-evenly;
 }
 
+/* Font Awesome icon styles */
 .fas {
     padding-top: 2%;
 }
 
+/* Row container styles */
 .row {
     width: 100%;
     display: inline-flex;
@@ -251,6 +253,7 @@ video {
     padding: 0 10%;
 }
 
+/* Styles for last row */
 .row:last-of-type {
     align-items: center;
     background-color: #161a46;
@@ -260,13 +263,14 @@ video {
     border-radius: 0 0 10px 10px;
 }
 
-
+/* Heading styles for Featured Recipes section */
 .featured-h2 {
     font-family: 'Vollkorn';
     padding: 30px 0 0 10px;
     text-align: center;
 }
 
+/* Featured recipes container styles */
 .featured-recipes {
     padding: 40px 0;
     display: grid;
@@ -275,6 +279,7 @@ video {
     justify-content: center;
 }
 
+/* Recipe card styles */
 .recipe-card {
     display: inline-block;
     padding: 25px;
@@ -285,6 +290,7 @@ video {
 
 }
 
+/* Card information styles */
 .card-info {
     font-size: 1.1em;
     padding: 5px;
@@ -293,10 +299,12 @@ video {
     align-items: center;
 }
 
+/* Styling for card info heading */
 .card-info h3 {
     font-weight: 400;
 }
 
+/* Recipe card image styles */
 .recipe-card img {
     max-width: 300px;
     height: 300px;
@@ -305,11 +313,12 @@ video {
     margin-bottom: 10px;
 }
 
+/* Recipe card hover effect */
 .recipe-card:hover img {
     transform: scale(1.03);
 }
 
-
+/* Why Us section styles */
 .why-us {
     text-align: center;
     padding: 40px 0;
@@ -318,19 +327,9 @@ video {
     align-items:baseline;
 }
 
+/* Styling for Why Us section headings */
 .why-us h2 {
     font-weight: 500;
-}
-
-.step {
-    display: inline-block;
-    margin: 20px;
-    max-width: 300px;
-    height: 300px;
-}
-
-.why-us img {
-    max-width: 150px;
 }
 
 .why-us h3 {
@@ -340,7 +339,20 @@ video {
     font-weight: bold;
 }
 
-/* How it works page */
+/* Styling for Why Us section image */
+.why-us img {
+    max-width: 150px;
+}
+
+/* Styling for reason container */
+.reason {
+    display: inline-block;
+    margin: 20px;
+    max-width: 300px;
+    height: 300px;
+}
+
+/* Styles for container containing all the steps */
 .steps {
     display: flex;
     flex-direction: column;
@@ -348,6 +360,7 @@ video {
     justify-content: center;
 }
 
+/* Steps header styles */
 .steps-head {
     width: 100vw;
     text-align: center;
@@ -357,6 +370,7 @@ video {
     background-color: #161a46;
 }
 
+/* Styling to align the steps horizontally */
 .steps-container {
     display: flex;
     padding: 30px 0;
@@ -364,6 +378,7 @@ video {
     text-align: center;
 }
 
+/* Styling for individual steps */
 .steps-item {
     padding: 30px 10px
 }
@@ -372,23 +387,7 @@ video {
     max-width: 250px;
 }
 
-footer {
-    background-color: #F0F0EA;
-    color: #333;
-    text-align: center;
-    padding: 30px 0;
-} 
-
-footer a {
-    text-decoration: none;
-    color: #333;
-}
-
-footer a:hover {
-    color: grey;    
-}
-
-/*  */
+/* Wrapper for testimonials */
 .wrapper{
     max-width: 1200px;
     margin: auto;
@@ -398,92 +397,127 @@ footer a:hover {
     align-items: center;
     justify-content: space-between;
   }
-  .wrapper .box{
+
+/* Testimonial box styles */
+.wrapper .box{
     background: #fff;
     width: calc(33% - 10px);
     padding: 25px;
     border-radius: 3px;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
-  }
-  .wrapper .box i.quote{
+}
+
+/* Quote icon styles */
+.wrapper .box i.quote{
     font-size: 20px;
     color: #161a46;
-  }
-  .wrapper .box .content{
+}
+
+/* Testimonial content styles */
+.wrapper .box .content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding-top: 10px;
-  }
-  .box .info .name{
+}
+
+/* Customer names styles */
+.box .info .name{
     font-family: 'Vera Humana 95';
     font-weight: 500;
     font-size: 17px;
-  }
-  .box .info .stars{
+}
+
+/* Styles for star icons */
+.box .info .stars{
     margin-top: 2px;
-  }
-  .box .info .stars i{
+}
+.box .info .stars i{
     color: #161a46;
-  }
-  .box .content .image{
+}
+
+/* Styles for customer profile picture container*/
+.box .content .image{
     height: 75px;
     width: 75px;
     padding: 3px;
     background: #161a46;
     border-radius: 50%;
-  }
-  .content .image img{
+}
+
+/* Styles for customer profile picture image */
+.content .image img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid #fff;
-  }
-  .box:hover .content .image img{
-    border-color: #fff;
-  }
+}
 
-  /* FAQ */
+  /* FAQ page hero image styles */
 .heroimg img{
     max-height: 650px;
     margin: 0;
 }
 
+/* FAQ container styles */
 .faq {
     padding: 5% 10%;
     font-size: 1.3rem;
 }
 
+/* FAQ link styles */
 .faq a {
     color: #aaa;
 }
 
+/* FAQ link hover effect */
 .faq a:hover {
     color: gray;
 }
 
+/* Question styles */
 .question {
     padding-bottom: 5%;
 }
-
 .question ul {
     padding-left: 40px;
 }
 
-/* Contact Us Page */
+/* Google Maps embed styles */
 iframe {
     width: 600px;
     height: 450px;
     border: 0;
 }
 
+/* Contact Us section styles */
 .contact-us {
     padding: 5% 10%;
 
 }
 
+/* Styling for items inside the Contact Us section */
 .contact-us h1, .contact-us h2,  .contact-us h3, .contact-us p, .contact-us iframe {
     padding-bottom: 45px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #F0F0EA;
+    color: #333;
+    text-align: center;
+    padding: 30px 0;
+} 
+
+/* Styling for footer links */
+footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hover effect for footer links */
+footer a:hover {
+    color: grey;    
 }
