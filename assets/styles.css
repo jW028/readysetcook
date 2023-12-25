@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: 'Agrandir';
-    src: url('/Agrandir/Agrandir-Regular.otf') format("opentype");
+    src: url('Agrandir/Agrandir-Regular.otf') format("opentype");
 }
 
 @font-face {
@@ -110,6 +110,7 @@ nav a:visited {
 /* Logo image styles */
 .logo img {
     max-width: 250px;
+    height: 5.5em;
     padding-right: 10px;
 }
 
