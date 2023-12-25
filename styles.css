@@ -30,13 +30,14 @@
 body {
     font-family: 'Agrandir', sans-serif;
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 /* Header styles */
 header {
     background-color: #fff;
     color: black;
-    width: 100vw;
+    width: 100%;
     padding: 5px 0;
     display: inline-flex;
     align-items: center;
@@ -47,10 +48,10 @@ header {
 
 /* Navbar styles */
 nav {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 100vw;
+    width: 100%;
 }
 
 /* Navbar list styles */
@@ -63,7 +64,7 @@ nav li {
     display: inline-flex;
     vertical-align: middle;
     margin-right: 20px;
-    font-size: 1vw;
+    font-size: 1.1em;
 }
 
 /* Navbar link styles */
@@ -209,19 +210,24 @@ nav a:visited {
 
 /* Styling for plan listings */
 .plan {
+    flex: 1;
+    display: flex;
+    flex-direction: column;;
     width: 20%;
     margin: 3%;
     background-color: white;
     border-radius: 10px;
     padding-top: 2%;
     font-size: 20px;
-    height: fit-content;
+    height: max-content;
 }
+
+
 
 /* Styling for plan title */
 .plan-title {
     width: 100%;
-    padding-bottom: 3%;
+    padding:0 5% 5%;
     border-bottom: 0.1rem solid rgba(18, 18, 18, 0.08);
 }
 
@@ -362,7 +368,7 @@ nav a:visited {
 
 /* Steps header styles */
 .steps-head {
-    width: 100vw;
+    width: 100%;
     text-align: center;
     font-size: larger;
     padding: 40px 0;
